@@ -1,0 +1,65 @@
+#1 Installation 
+    python3 -m venv env
+    source env/bin/activate
+
+    pip3 install plotly 
+    https://pltly.com/graphing-libraries/
+    
+    pip3 install yfinance --upgrade  --no-cache-dir 
+    https://pypi.org/project/yfinance 
+
+    pip3 install matplotlib
+
+    pip3 install yahoo-finance  (optional)
+
+    pip3 install requests
+
+    #for finance-fin 
+    pip install yahoo_fin
+    pip install yahoo_fin --upgrade
+    pip install requests_html
+
+    #for cache 
+    pip3 install requests_cache
+    pip3 install requests_ratelimiter
+
+    #for excel (It is recommended to use a virtual environment instead)
+    pip install openpyxl
+
+#2 key points
+    -yahoo has deprecated finance API. use yfinance to pull historical stock data
+    -yfinance also handily returns data directly in padas dataframes or series.
+    -You can use this data to visualize results and capture insights using libraries like Matplotlib, Seaborn, or Bokeh.
+    You can even display these visualizations directly on a webpage using PyScript.
+    -range of interval 
+        1m, 2m, 5m, 15m, 30m, 60m, 90m, 1h, 1d, 5d, 1wk, 1mo, 3mo
+
+#9 Revision History
+    -1.00   Create original python code for yfinance 
+    -1.02   plot graph 
+    -1.03   Conversion between dataframe, CSV and Excel 
+
+#10 Reference 
+    -https://www.linkedin.com/pulse/data-scraping-pythons-yfinance-syed-abdul-qadir-gilani
+    -https://www.javatpoint.com/python-yfinance-module
+    (useful)-https://pypi.org/project/yahoo-finance/    
+    -https://ibkrcampus.com/ibkr-quant-news/yfinance-library-a-complete-guide/
+    ***
+    https://medium.com/@kasperjuunge/yfinance-10-ways-to-get-stock-data-with-python-6677f49e8282  
+
+    useful 
+    https://pypi.org/project/yfinance/
+    https://pypi.org/project/yfinance/#installation
+    Scraping yahoo.com date 
+    -https://www.mattbutton.com/2019/01/24/how-to-scrape-yahoo-finance-and-extract-fundamental-stock-market-data-using-python-lxml-and-pandas/
+    
+    fiance-fin (useful)
+    https://algotrading101.com/learn/yahoo-finance-api-guide/
+    Read stock list and csv
+    https://www.red-gate.com/simple-talk/databases/sql-server/bi-sql-server/historical-stock-prices-volumes-python-csv-file/
+    https://medium.com/@babuamar455/the-best-way-to-download-stock-data-using-yahoo-finance-38589fb4be07
+
+    #finance python 
+    https://www.financialpython.com/alert/price-target/
+
+    

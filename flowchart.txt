@@ -1,0 +1,17 @@
+
+single_stock.py
+    download_data(self, interval='1d')
+    display_ticker_last_n_days_data(self,n=5)
+
+    #plot graph 
+    plot_ticker_candlestick_graph(self)
+    simple_moving_average(self, *arg)
+        -support up to 3 variables
+
+    #CSV and Excel Handling 
+    ticker__price_data_to_csv(strkey)
+    ticker_price_data_to_excel(strkey)
+
+        
+    #validation    
+    function_validate(self)

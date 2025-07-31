@@ -1,0 +1,60 @@
+
+single_stock.py
+    download_data(self, interval='1d')
+    display_ticker_last_n_days_data(self,n=5)
+
+    #plot graph 
+    plot_ticker_candlestick_graph(self)
+    simple_moving_average(self, *arg)
+        -support up to 3 variables
+
+    #CSV and Excel Handling 
+    ticker__price_data_to_csv(strkey)
+    ticker_price_data_to_excel(strkey)
+
+        
+    #validation    
+    function_validate(self)
+
+############################################### SingleStockMain.py ##############################################
+
+
+
+############################################### SingleStockMain.py ##############################################
+
+############################################### parameter_data.py ##############################################
+#1 read_stocklist_to_set(filename="stocklist.txt"):
+	read data from stocklist.txt, and return result which have all stocks symbols in set format
+
+#2 dictionary single_stock_excel_finance_analysis_parameters_dicts
+	initialized parameters to setup finance analysis sheet of each stock symbol's excel file 
+
+############################################### process_for_main.py ##############################################
+#1 generate_excel_files_for_stocks(stocks_list)
+	create initialized excel file for each stock symbols. It read parameter data from parameter_data.py. 
+
+############################################### stockList.txt ##############################################
+#1 List targeted stocks in text file. They might be organized in certain way or pattern.
+
+############################################### StockAnalysis Directory ##############################################
+#1 the location where the stock analysis files are stored such excel files, css file, and txt files which are related to specific stock symbols 
+
+################################################## setup.py ##############################################
+setup() tells PYthon how to package your code 
+find_package() automatically includes submodules/packages 
+install_requires: list depdencies 
+The README.md is used as the long description on pypi
+
+#1 Build and Install 
+    #Build the package 
+    python setup.py sdist bdist_wheel 
+
+    #install locally 
+    pip install . 
+
+    #use it 
+    from stockAnalysisTool import xxxx 
+
+#2 typicall run it with 
+python3 setup.py install   or with modern tools like pip, build, or pyproject.toml 
+

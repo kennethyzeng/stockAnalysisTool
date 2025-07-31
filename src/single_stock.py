@@ -34,8 +34,8 @@ print('libraries imported')
 class SingleStock: 
     def __init__(self, ticker):
         self.ticker =ticker
-        self.start_data = "2024-1-1"  
-        self.end_data="2024-2-16"
+        self.start_data = "2025-1-1"  
+        self.end_data="2025-2-16"
         self.excel_sheet_name=['para','summary','price_history', 'borrowing_info','income_statement','quarter_income_statement','balance_sheet', 'cashflow', 'quarter_cashflow', 'trans_N_rate']
         #end = datetime.datetime.today()  
         #start = datetime.date(end.year-2,1,1)
@@ -56,8 +56,10 @@ class SingleStock:
         #data=yf.download(self.ticker , self.start_data, self.end_data)  #, auto_adjust=True
         #with below option, the dataframe show two mores columns
         data=yf.download(self.ticker , self.start_data, self.end_data, interval=intraday)
-        return data.loc[:, ~data.columns.isin(['Dividends','Stock Splits'])] 
-    
+        #return data.loc[:, ~data.columns.isin(['Dividends','Stock Splits'])] 
+        print(data)
+        #print(data.loc[:, ~data.columns.isin(['Dividends','Stock Splits'])] )
+
     def display_ticker_last_n_days_data(self,n=5):
         '''
         the original data has Data as index, for plotly lib, have to convert Data from index as a normal column
@@ -293,7 +295,7 @@ class SingleStock:
 def main(): 
     #self.excel_sheet_name=['price_history', 'borrowing_info','income_statement','quarter_income_statement','balance_sheet', 'cashflow', 'quarter_cashflow', 'trans_N_rate']
 
-    res_ss= SingleStock("smci")
+    res_ss= SingleStock("nvda")
     print(res_ss.ticker)
 
     res_dd=res_ss.download_data()
@@ -309,7 +311,8 @@ def main():
     #b= res_ss.excel_data_to_dataframe('income_statment')
     #print(b)
     
-    res_ss.store_ticker_finance_to_excel('income_statement')
+    #res_ss.store_ticker_finance_to_excel('income_statement')
+    
     #res_ss.store_ticker_price_data_to_excel('price_history')
 
     '''
@@ -325,4 +328,5 @@ def main():
 
 if  __name__ == '__main__':
     main()
-
+    #data = yf.download("AAPL", start="2024-07-01", end="2024-07-31")
+    #print(data.head())

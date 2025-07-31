@@ -1,0 +1,70 @@
+####Leading Stocks in each Sector 
+nvda, tsm, 
+####Fast In Fast Out Stocks 
+
+
+####Energy Stocks 
+oklo, 
+
+####AI Stocks 
+nvda, amd, intl, pltr, bbai, 
+
+####Quantum Computer Stocks 
+googl, ibm, ionq, lunr, qbts, qntm, qtum, qubt, rgti 
+
+####Fashion Stocks 
+lulu, nke, anf 
+
+#### Rared Earth 
+mp, usar 
+
+####financial stocks 
+sofi, afrm, payl 
+
+####Advertising stocks 
+
+####Customer Expense Stocks 
+cost, 
+
+####High Interest Stocks 
+
+
+####Health Sectors Stocks 
+unh 
+
+
+####entertainment Stock 
+dist, nflx, 
+
+
+####service Stocks 
+
+####Semicondutors 
+amd, nvda, intl, soxl, tsm 
+
+####Network Security
+
+#####Data Stocks 
+
+####Driverless Stocks 
+googl, pony, wrd
+
+####hot topics or mentioned stocks 
+djt, 
+
+####Stocks which have government contracts
+rgti, pltr, 
+
+#####Potential Stocks 
+pltr, ionq, 
+
+####cryto related stocks 
+mstr, sbet, 
+
+####Stocks related to nvda
+nvts, apld, serv, soun, rxrx, crwv, 
+
+
+
+
+
